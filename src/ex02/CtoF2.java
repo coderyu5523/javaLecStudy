@@ -6,7 +6,7 @@ public class CtoF2 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double f, c;
+        double c, f;
         System.out.print("섭씨 온도를 입력하세요 :");
         c = sc.nextDouble();
 

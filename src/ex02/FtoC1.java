@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class FtoC1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double f, c;
+        double c, f;
         System.out.print("화씨 온도를 입력하세요 :");
         f = sc.nextDouble();
 
