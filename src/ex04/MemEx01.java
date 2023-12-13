@@ -10,7 +10,7 @@ public class MemEx01 {
     public static void main(String[] args) {
 
         System.out.println(Person1.age);
-        System.out.println(Person1.gendergender);
+        System.out.println(Person1.gender);
     }
 
 }
