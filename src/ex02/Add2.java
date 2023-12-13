@@ -14,6 +14,6 @@ public class Add2 {
         y = sc.nextInt();
 
         sum = x + y;
-        System.out.println(sum);
+        System.out.println("두 수의 합 :" + sum);
     }
 }
