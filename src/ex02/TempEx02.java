@@ -19,7 +19,7 @@ public class TempEx02 {
         System.out.println("온도를 입력하시오");
         temp = sc.nextDouble();
 
-        result = (selectNum == 1) ? 5.0 / (9.0 * (temp - 32) : 9.0) / (5.0 * temp + 32);
+        result = (selectNum == 1) ? 5.0 / 9.0 * (temp - 32) : 9.0 / 5.0 * temp + 32;
         System.out.println("온도 : " + result);
     }
 
