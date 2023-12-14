@@ -5,8 +5,6 @@ public class ForExampLe01 {
         for (int i = 1; i <= 10; i++) {
 
             System.out.println("i의 값은 :" + i);
-
-
         }
     }
 }
