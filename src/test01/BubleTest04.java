@@ -7,7 +7,7 @@ public class BubleTest04 {
         final int N = arr.length;
         int temp;
 
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length - 1; i++) {
 
             if (arr[i] > arr[i + 1]) {
                 temp = arr[i];

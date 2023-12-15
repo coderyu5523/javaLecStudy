@@ -8,7 +8,7 @@ public class BubleTest09 {
         final int N = arr.length;
         int temp;
 
-        for (int i = 0; i < arr.length - i - 1; i++) {
+        for (int i = 0; i < arr.length - 1; i++) {
 
             if (arr[i] > arr[i + 1]) {
                 temp = arr[i];
@@ -16,7 +16,7 @@ public class BubleTest09 {
                 arr[i + 1] = temp;
             }
         }
-        for (int i = 0; i < arr.length - i - 1; i++) {
+        for (int i = 0; i < arr.length - 2; i++) {
 
             if (arr[i] > arr[i + 1]) {
                 temp = arr[i];
@@ -24,7 +24,7 @@ public class BubleTest09 {
                 arr[i + 1] = temp;
             }
         }
-        for (int i = 0; i < arr.length - i - 1; i++) {
+        for (int i = 0; i < arr.length - 3; i++) {
 
             if (arr[i] > arr[i + 1]) {
                 temp = arr[i];
@@ -33,7 +33,7 @@ public class BubleTest09 {
             }
         }
 
-        for (int i = 0; i < arr.length - i - 1; i++) {
+        for (int i = 0; i < arr.length - 4; i++) {
 
             if (arr[i] > arr[i + 1]) {
                 temp = arr[i];
@@ -44,7 +44,7 @@ public class BubleTest09 {
 
 
         for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
+            System.out.print(arr[i] + "\t");
         }
     }
 }

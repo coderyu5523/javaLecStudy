@@ -2,7 +2,7 @@ package test01;
 
 public class BubleTest08 {
     public static void main(String[] args) {
-        int[] arr = {5, 8, 2, 4, 3};
+        int[] arr = {5, 8, 2, 4, 3, 10, 50, 15};
         final int N = arr.length;
         int temp;
 
