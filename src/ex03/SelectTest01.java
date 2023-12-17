@@ -45,13 +45,10 @@ public class SelectTest01 {
             }
         }
 
-
-        System.out.println(arr[0]);
-        System.out.println(arr[1]);
-        System.out.println(arr[2]);
-        System.out.println(arr[3]);
-        System.out.println(arr[4]);
-
+        for (int k = 0; k < 5; k++) {
+            System.out.println(arr[k]);
+            
+        }
 
     }
 }
