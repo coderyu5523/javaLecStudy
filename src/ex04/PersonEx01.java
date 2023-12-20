@@ -14,6 +14,7 @@ class people1 {  // 클래스의 상태를 정의하는게 1번
         this.hp = 100;  // 고정값이면 상수로 받음.
     }
 
+
     //행위. 메서드 게임 플레이하면서 레벨을 올리는 것.
     public void upgradePower() {
         this.power++;
