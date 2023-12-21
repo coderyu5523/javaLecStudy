@@ -1,0 +1,35 @@
+package ex03.test;
+
+import java.util.Random;
+
+public class Lotto01 {
+    public static void main(String[] args) {
+        int[] arr = new int[6];
+        Random r = new Random();
+        int num;
+
+        num = r.nextInt(45) + 1;
+        arr[0] = num;
+
+        num = r.nextInt(45) + 1;
+        arr[1] = num;
+
+        num = r.nextInt(45) + 1;
+        arr[2] = num;
+
+        num = r.nextInt(45) + 1;
+        arr[3] = num;
+
+        num = r.nextInt(45) + 1;
+        arr[4] = num;
+
+        num = r.nextInt(45) + 1;
+        arr[5] = num;
+
+
+        for (int i = 0; i < 6; i++) {
+            System.out.println(arr[i]);
+        }
+
+    }
+}
