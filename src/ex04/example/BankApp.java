@@ -1,31 +1,39 @@
 package ex04.example;
 
-//
-
-
 import ex04.example.model.Account;
 import ex04.example.model.User;
 
 public class BankApp {
+
     public static void main(String[] args) {
-        // 고객 2명 생성
+        // 1. 고객 2명 만들기
+        User ssar = new User(1, "ssar", "ssar@nate.com");
+        User cos = new User(2, "cos", "cos@nate.com");
+        User love = new User(3, "love", "love@nate.com");
 
-        User u1 = new User(1, "ssar", "ssar@nate.com");
-        User u2 = new User(2, "cos", "sdf@naver.com");
+        // 2. 계좌 2개 만들기
+        Account ssarAccount = new Account(1111, 1000L, 1);
+        Account cosAccount = new Account(2222, 1000L, 2);
+        Account loveAccount = new Account(3333, 1000L, 3);
 
-        // 계좌 2개 생성
+        // 3. 고객에게 받은 정보 (amount)
+        long amount = 100L;
 
-        Account a1 = new Account(1111, 1000L, 1);
-        Account a2 = new Account(2222, 1000L, 2);
+        // 4. 이체 (ssar -> cos 100원)
+        BankService.transfer(ssarAccount, cosAccount, amount);
 
-        //계좌 이체 하기
-        int amount = 100;
-        a1.balance = a1.balance - amount;
-        a2.balance = a2.balance + amount;
+        // 5. 이체 (ssar -> love 100원)
+        BankService.transfer(ssarAccount, loveAccount, amount);
 
-        System.out.println(a1);
-        System.out.println(a2);
+        // 6. 이체 (cos -> love 100원)
+        BankService.transfer(cosAccount, loveAccount, amount);
 
+        // 7. 객체 상태 확인
+        System.out.println(ssarAccount);
+        System.out.println(cosAccount);
+        System.out.println(loveAccount);
 
+        // 8. 출금
+        BankService.withdraw(ssarAccount, amount);
     }
 }
