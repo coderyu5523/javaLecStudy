@@ -15,8 +15,5 @@ public class BankApp {
         Account accountohh = new Account(3, 10000L, 3333);
 
 
-        Account.withdraw(1000L);
-
-
     }
 }
