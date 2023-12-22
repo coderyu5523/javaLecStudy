@@ -15,5 +15,11 @@ public class BankApp {
         Account accountohh = new Account(3, 10000L, 3333);
 
 
+        BankService.transfer(accountkim, accounthan, 1000L);
+        System.out.println(accountkim);
+        System.out.println(accounthan);
+        System.out.println(accountohh);
+
+
     }
 }
