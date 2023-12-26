@@ -13,9 +13,9 @@ class Animal {
 }
 
 class Cat extends Animal {
-    // 재정의 부모가 들고 있는 메서드를 가려버림 , alt + insert -override method
+    @Override
     void speak() {
-        System.out.println("야옹");
+        super.speak();
     }
 }
 
