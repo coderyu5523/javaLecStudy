@@ -4,7 +4,6 @@ class Protoss {
 
 }
 
-
 class Zealot extends Protoss {
     public void attack() {
         System.out.println("질럿이 공격합니다");

@@ -8,12 +8,10 @@ public class CircleEx01 extends PizzaEx01 {
         this.name = name;
         this.radius = radius;
 
-
     }
 
     public void print() {
         System.out.println("피자의 종류:" + name + ", 피자의 크기:" + radius);
     }
-
 
 }
