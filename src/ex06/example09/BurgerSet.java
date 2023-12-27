@@ -7,11 +7,11 @@ public class BurgerSet {   // has 버거 , has 콜라
     public BurgerSet(Burger burger, Coke coke) {
         this.burger = burger;
         this.coke = coke;
-        System.out.println("버거 세트가 만들어졌어요");
+        System.out.println(burger.getName() + "세트가 만들어졌어요");
     }
 
     public int getTotalPrice() {
-        return (getBurger().getPrice() + getCoke().getPrice());
+        return getBurger().getPrice() + getCoke().getPrice();
     }
 
     public Burger getBurger() {
