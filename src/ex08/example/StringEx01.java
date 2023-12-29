@@ -1,7 +1,6 @@
 package ex08.example;
 
 public class StringEx01 {
-
     public static String encoding(String data) {
 
 
