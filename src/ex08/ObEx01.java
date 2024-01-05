@@ -1,7 +1,7 @@
 package ex08;
 
 
-class Account extends Object { // 모든 클래스는 extends Object 가 생략되어있음
+class Account { // 모든 클래스는 extends Object 가 생략되어있음
     private String author;
     private int number;
     private int balance;

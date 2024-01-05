@@ -1,0 +1,22 @@
+package ex13.example13;
+
+
+import java.util.PriorityQueue;
+
+public class PriorityQueueTest {
+    public static void main(String[] args) {
+
+        PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
+        pq.add(30);
+        pq.add(5);
+        pq.add(10);
+
+        System.out.println(pq);
+        System.out.println("삭제된 원소" + pq.remove());
+        System.out.println("삭제된 원소" + pq.remove());
+        System.out.println("삭제된 원소" + pq.remove());
+        System.out.println("삭제된 원소" + pq.remove());
+
+
+    }
+}
