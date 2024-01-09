@@ -51,7 +51,6 @@ public class StreamEx02 {
             return u;
         }).toList();
 
-
         newAge.stream().forEach(u -> System.out.println(u.getAge()));
     }
 

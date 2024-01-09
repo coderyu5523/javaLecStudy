@@ -23,7 +23,6 @@ public class StreamEx01 {
 
         // 연속적으로 데이터를 저장하고 싶으면 어레이리스트!
         List<Map<String, Object>> arr = Arrays.asList(data1, data2, data3);
-        System.out.println(arr);
 
         List<Map<String, Object>> newArr = arr.stream().map(d -> {
             int newAge = (Integer) d.get("age") - 1;
@@ -31,6 +30,8 @@ public class StreamEx01 {
 
             return d;
         }).toList();
+
+        newArr.stream().forEach(System.out::println);
 
 
         // 클래스를 안만들고 맵을 쓰면 편함. 클래스와는 다르게 메서드를 따로 만들 수 없음.
